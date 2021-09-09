@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Share+Tech+Mono&display=swap");
+* {
+  font-family: 'Share Tech Mono', monospace;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#container {
+  padding: 1rem;
+}
+
+nav {
+  padding: 1rem;
+  text-align: right;
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  margin-right: 1.5rem;
+}
+
+nav #day-night {
+  display: none;
+}
+
+#contact-left {
+  position: fixed;
+  padding: 1rem;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+#contact-left #contact-left-links {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact-left #contact-line {
+  height: 30vh;
+  padding: 1px;
+  display: inline-block;
+  background: black;
+}
+
+#contact-left a {
+  margin-bottom: 2rem;
+  color: black;
+  font-size: 1.5rem;
+}
+
+main {
+  position: relative;
+  padding: 1rem;
+  width: 85%;
+  margin: 0 auto;
+}
+
+main .block {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+main .block .heading {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 3rem;
+}
+
+main .block p {
+  padding: 1rem;
+}
+
+main #about {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90vh;
+}
+
+main #about #heading--main {
+  font-size: 5rem;
+}
+
+main #skills .skill-blocks-all {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+main #skills .skill-block {
+  margin-top: 0rem;
+  padding: 1rem;
+}
+
+main #skills .skill-block .skill-block-heading {
+  font-size: 1.3rem;
+}
+
+main #skills .skill-block .skill-line {
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+main #skills .skill-block .skill-line div {
+  padding: 0.2rem;
+  background: #000;
+}
+
+main #skills .skill-block .skill-line #skill-line-html5 {
+  width: 80%;
+}
+
+main #skills .skill-block .skill-line #skill-line-css3 {
+  width: 70%;
+}
+
+main #skills .skill-block .skill-line #skill-line-saas {
+  width: 70%;
+}
+
+main #skills .skill-block .skill-line #skill-line-bootstrap {
+  width: 60%;
+}
+
+main #skills .skill-block .skill-line #skill-line-javascript {
+  width: 70%;
+}
+
+main #skills .skill-block .skill-line #skill-line-jquery {
+  width: 60%;
+}
+
+main #skills .skill-block .skill-line #skill-line-python {
+  width: 60%;
+}
+
+main #skills .skill-block .skill-line #skill-line-c {
+  width: 60%;
+}
+
+main #skills .skill-block .skill-line #skill-line-php {
+  width: 75%;
+}
+
+main #skills .skill-block .skill-line #skill-line-mysql {
+  width: 70%;
+}
+
+main #skills .skill-block .skill-line #skill-line-git {
+  width: 80%;
+}
+
+main #skills .skill-block .skill-line #skill-line-figma {
+  width: 50%;
+}
+
+main #edu .edu-block-main {
+  margin-top: 1rem;
+  padding: 1rem;
+  padding-left: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #edu .edu-block-main #edu-line {
+  margin-right: 2rem;
+  width: 0.2rem;
+  background: black;
+  height: 22rem;
+}
+
+main #edu .edu-block-main .edu-block-sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #edu .edu-block-main .edu-block-sub .edu-block {
+  margin-bottom: 2rem;
+}
+
+main #edu .edu-block-main .edu-block-sub .edu-block .edu-block-heading {
+  font-size: 1.6rem;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Share+Tech+Mono&display=swap');
+
+$color-black-font:black;
+*{
+    font-family: 'Share Tech Mono', monospace;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container{
+padding: 1rem;
+}
+
+nav{
+    // background: red;
+    padding: 1rem;
+    text-align: right;
+    position: relative;
+
+    a{
+        text-decoration: none;
+        color: $color-black-font;
+        margin-right: 1.5rem;
+    }
+
+    #day-night{
+        display: none
+    }
+}
+
+
+#contact-left{
+    //background: red;
+    position: fixed;
+    padding: 1rem;
+    margin-top: 5rem;
+    text-align: center;
+    // background: teal;
+
+    #contact-left-links{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #contact-line{
+        height: 30vh;
+        padding: 1px;
+        display: inline-block;
+        background: black;
+    }
+
+    a{
+        margin-bottom: 2rem;
+        color: $color-black-font;
+        font-size: 1.5rem;
+    }
+}
+
+main{
+    //background-color: yellowgreen;
+    position: relative;
+    padding: 1rem;
+    width: 85%;
+    margin: 0 auto;
+    //margin-top: 3rem;
+
+    .block{
+       // background: red;
+        padding: 2rem;
+        margin-bottom: 2rem;
+
+        .heading{
+            font-family: 'Major Mono Display', monospace;
+            font-size: 3rem;
+        }
+
+        p{
+            padding:1rem
+        }
+    }
+
+    #about{
+        position: relative;
+        // margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        justify-content: center;
+        height: 90vh;
+
+        #heading--main{
+            font-size: 5rem;
+        }
+    }
+
+    #skills{
+
+        .skill-blocks-all{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .skill-block{
+            margin-top: 0rem;
+            padding: 1rem;
+
+            .skill-block-heading{
+                font-size: 1.3rem;
+            }
+
+            .skill-line{
+                margin-top: 0.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding:1rem;
+                border:1px solid black;
+
+
+                div{
+                    padding: 0.2rem;
+                    background: #000;
+                }
+
+                #skill-line-html5{
+                    width: 80%;
+                }
+
+                #skill-line-css3{
+                    width: 70%;
+                }
+
+                #skill-line-saas{
+                    width: 70%;
+                }
+
+                #skill-line-bootstrap{
+                    width: 60%;
+                }
+
+                #skill-line-javascript{
+                    width: 70%;
+                }
+
+                #skill-line-jquery{
+                    width: 60%;
+                }
+
+                #skill-line-python{
+                    width: 60%;
+                }
+
+                #skill-line-c{
+                    width: 60%;
+                }
+
+                #skill-line-php{
+                    width: 75%;
+                }
+
+                #skill-line-mysql{
+                    width: 70%;
+                }
+
+                #skill-line-git{
+                    width: 80%;
+                }
+
+                #skill-line-figma{
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    #edu{
+
+        .edu-block-main{
+            margin-top: 1rem;
+            padding: 1rem;
+            padding-left: 6rem;
+            display: flex;
+
+
+            #edu-line{
+                margin-right: 2rem;
+                width: 0.2rem;
+                background: black;
+                height: 22rem;
+            }
+
+            .edu-block-sub{
+                display: flex;
+                flex-direction: column;
+
+                .edu-block{
+                    margin-bottom: 2rem;
+                    .edu-block-heading{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }   
+        
+    }
+
+   
+}
