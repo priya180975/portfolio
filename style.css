@@ -78,6 +78,7 @@ main .block {
 main .block .heading {
   font-family: 'Major Mono Display', monospace;
   font-size: 3rem;
+  width: 30%;
 }
 
 main .block p {
