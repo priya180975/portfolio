@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Share+Tech+Mono&display=swap');
 
-$color-black-font:black;
+//$color-black-font:black;
+$color-black-font:#000;//change
+$color-white-font:#fff;//change
+
 *{
     font-family: 'Share Tech Mono', monospace;
     padding: 0;
@@ -8,8 +11,12 @@ $color-black-font:black;
     box-sizing: border-box;
 }
 
+body{
+    background: $color-white-font; //remove
+}
+
 #container{
-padding: 1rem;
+    padding: 1rem;
 }
 
 nav{
@@ -31,12 +38,10 @@ nav{
 
 
 #contact-left{
-    //background: red;
     position: fixed;
     padding: 1rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
     text-align: center;
-    // background: teal;
 
     #contact-left-links{
         margin-top: 2rem;
@@ -48,26 +53,24 @@ nav{
         height: 30vh;
         padding: 1px;
         display: inline-block;
-        background: black;
+        background: $color-black-font;
     }
 
     a{
         margin-bottom: 2rem;
         color: $color-black-font;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 }
 
 main{
-    //background-color: yellowgreen;
     position: relative;
     padding: 1rem;
     width: 85%;
     margin: 0 auto;
-    //margin-top: 3rem;
+    color: $color-black-font;
 
     .block{
-       // background: red;
         padding: 2rem;
         margin-bottom: 2rem;
 
@@ -83,10 +86,8 @@ main{
 
     #about{
         position: relative;
-        // margin-top: 4rem;
         display: flex;
         flex-direction: column;
-        // align-items: center;
         justify-content: center;
         height: 90vh;
 
@@ -116,12 +117,12 @@ main{
                 align-items: center;
                 justify-content: space-between;
                 padding:1rem;
-                border:1px solid black;
+                border:1px solid $color-black-font;
 
 
                 div{
                     padding: 0.2rem;
-                    background: #000;
+                    background: $color-black-font;
                 }
 
                 #skill-line-html5{
@@ -181,15 +182,6 @@ main{
             margin-top: 1rem;
             padding: 1rem;
             padding-left: 6rem;
-            display: flex;
-
-
-            #edu-line{
-                margin-right: 2rem;
-                width: 0.2rem;
-                background: black;
-                height: 22rem;
-            }
 
             .edu-block-sub{
                 display: flex;
@@ -197,6 +189,9 @@ main{
 
                 .edu-block{
                     margin-bottom: 2rem;
+                    border-left: 0.3rem solid $color-black-font;
+                    padding: 1rem;
+
                     .edu-block-heading{
                         font-size: 1.6rem;
                     }
@@ -206,5 +201,103 @@ main{
         
     }
 
-   
+    #project{
+        position: relative;
+        
+        #project-all{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .project-block{
+                border: 2px solid $color-black-font;
+                display: flex;
+                flex-direction: column;
+                margin: 1rem;
+
+                img{
+                    width: 100%;
+                }
+
+                .project-block-cont
+                {
+                    padding:1rem;
+                    color: $color-black-font;
+                    display: flex;
+                    flex-direction: column;
+                    
+
+                    .project-block-heading{
+                        font-size: 1.6rem;
+                    }
+
+                    span,p{
+                        font-size: 1.2rem;
+                    }
+
+                    .project-block-links-source{
+                        padding: 1rem;
+                        a{
+                            display: block;
+                            text-decoration: none;     
+                            color: $color-black-font;
+                        }
+                    }
+
+                    .used-lang{
+                        .label{
+                            border:1px solid $color-black-font
+                        }
+                    }
+                }
+
+                .project-block-cont:hover{
+                    background: $color-black-font;
+                    color: $color-white-font;
+                    a{
+                        color: $color-white-font;
+                    }
+                    .label{
+                        border-color: $color-white-font;
+                    }
+                }
+            
+            }
+        }
+    }
+
+
+    #contact{
+        #contact-block{
+            padding: 1rem;
+            margin-left: 3rem;
+            margin-top: 2rem;
+
+            .contact-input{
+                margin-bottom: 1.5rem;
+            }
+            label{
+                font-size: 1.2rem;
+            }
+            input,textarea{
+                outline: none;
+                padding: 0.8rem;
+                width: 100%;    
+                border: 1px solid $color-black-font;
+                background: none;
+            }
+            button{
+                color: $color-black-font;
+                padding: 0.6rem 2rem;
+                border: none;
+                background: none;
+                cursor: pointer;
+                border: 1px solid $color-black-font;
+            }
+            button:hover{
+                background: $color-black-font;
+                color: $color-white-font;
+            }
+           
+        }
+    }
 }

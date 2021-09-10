@@ -7,6 +7,10 @@
           box-sizing: border-box;
 }
 
+body {
+  background: #fff;
+}
+
 #container {
   padding: 1rem;
 }
@@ -19,7 +23,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: #000;
   margin-right: 1.5rem;
 }
 
@@ -30,7 +34,7 @@ nav #day-night {
 #contact-left {
   position: fixed;
   padding: 1rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
@@ -49,13 +53,13 @@ nav #day-night {
   height: 30vh;
   padding: 1px;
   display: inline-block;
-  background: black;
+  background: #000;
 }
 
 #contact-left a {
   margin-bottom: 2rem;
-  color: black;
-  font-size: 1.5rem;
+  color: #000;
+  font-size: 1.8rem;
 }
 
 main {
@@ -63,6 +67,7 @@ main {
   padding: 1rem;
   width: 85%;
   margin: 0 auto;
+  color: #000;
 }
 
 main .block {
@@ -126,7 +131,7 @@ main #skills .skill-block .skill-line {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1rem;
-  border: 1px solid black;
+  border: 1px solid #000;
 }
 
 main #skills .skill-block .skill-line div {
@@ -186,16 +191,6 @@ main #edu .edu-block-main {
   margin-top: 1rem;
   padding: 1rem;
   padding-left: 6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-main #edu .edu-block-main #edu-line {
-  margin-right: 2rem;
-  width: 0.2rem;
-  background: black;
-  height: 22rem;
 }
 
 main #edu .edu-block-main .edu-block-sub {
@@ -210,9 +205,121 @@ main #edu .edu-block-main .edu-block-sub {
 
 main #edu .edu-block-main .edu-block-sub .edu-block {
   margin-bottom: 2rem;
+  border-left: 0.3rem solid #000;
+  padding: 1rem;
 }
 
 main #edu .edu-block-main .edu-block-sub .edu-block .edu-block-heading {
   font-size: 1.6rem;
+}
+
+main #project {
+  position: relative;
+}
+
+main #project #project-all {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+main #project #project-all .project-block {
+  border: 2px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem;
+}
+
+main #project #project-all .project-block img {
+  width: 100%;
+}
+
+main #project #project-all .project-block .project-block-cont {
+  padding: 1rem;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #project #project-all .project-block .project-block-cont .project-block-heading {
+  font-size: 1.6rem;
+}
+
+main #project #project-all .project-block .project-block-cont span, main #project #project-all .project-block .project-block-cont p {
+  font-size: 1.2rem;
+}
+
+main #project #project-all .project-block .project-block-cont .project-block-links-source {
+  padding: 1rem;
+}
+
+main #project #project-all .project-block .project-block-cont .project-block-links-source a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+main #project #project-all .project-block .project-block-cont .used-lang .label {
+  border: 1px solid #000;
+}
+
+main #project #project-all .project-block .project-block-cont:hover {
+  background: #000;
+  color: #fff;
+}
+
+main #project #project-all .project-block .project-block-cont:hover a {
+  color: #fff;
+}
+
+main #project #project-all .project-block .project-block-cont:hover .label {
+  border-color: #fff;
+}
+
+main #contact #contact-block {
+  padding: 1rem;
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+main #contact #contact-block .contact-input {
+  margin-bottom: 1.5rem;
+}
+
+main #contact #contact-block label {
+  font-size: 1.2rem;
+}
+
+main #contact #contact-block input, main #contact #contact-block textarea {
+  outline: none;
+  padding: 0.8rem;
+  width: 100%;
+  border: 1px solid #000;
+  background: none;
+}
+
+main #contact #contact-block button {
+  color: #000;
+  padding: 0.6rem 2rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+main #contact #contact-block button:hover {
+  background: #000;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
