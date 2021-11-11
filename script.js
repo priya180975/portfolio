@@ -1,34 +1,62 @@
-let i=0;
-let nameTxt="PRIYA NAYAK";
-function typing(){
-    if(i<nameTxt.length)
+function type()
+{
+    let name1="PRIYA NAYAK";
+    let namearr=name1.split("");
+
+    function looping()
     {
-        let nameTxtDisplay=$("#heading--main").text()+nameTxt.charAt(i);
-        $("#heading--main").text(nameTxtDisplay);
-        i++;
-        setTimeout(typing,150);    
+        if(namearr.length>0)
+        {
+            let n=namearr.shift();
+            document.querySelector("#heading--main").innerHTML+=n;
+        }   
+        else
+        {
+            deleting();
+            return false;
+        }
+        setTimeout(looping,500);
+    }
+
+    looping();
+}
+
+
+function deleting()
+{
+    nameDarr=document.querySelector("#heading--main").innerHTML.split("");
+    if(nameDarr.length>0)
+    {
+        nameDarr.pop();
+        document.querySelector("#heading--main").innerHTML=nameDarr.join("");
     }
     else
     {
-        setTimeout
-        (
-            function(){
-                $("#heading--main").slideUp();
-                setTimeout(function(){
-                    $("#heading--main").show();
-                    $("#heading--main").text(" ");
-                    i=0;
-                    setTimeout(typing(),100);
-                },1000)
-            }
-        ,500);
+        type();
+        return false;
+    }
+    setTimeout(deleting,200)
+}
+
+type();
+
+let dayN=document.querySelector("#day-night")
+dayN.addEventListener("click",alter)
+console.log(document.querySelector("#day-night"))
+function alter()
+{
+    if(dayN.querySelector("i").classList.contains("fa-sun"))
+    {
+        dayN.innerHTML='<i class="fas fa-moon"></i>';
+    }
+    else
+    {
+        dayN.innerHTML='<i class="fas fa-sun"></i>';
     }
 }
 
-$("document").ready(
-    function()
-    {
-        $("#heading--main").text(" ");
-        typing();
-    }
-);
+
+//console.log(document.documentElement.style.setProperty("--color-black-font","red"));
+// root.style.setProperty('--font-size', '14px');
+
+
