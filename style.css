@@ -332,4 +332,35 @@ main #contact #contact-block button:hover {
   background: black;
   color: #fff;
 }
+
+.animaaation {
+  -webkit-animation-name: wipe-enter;
+          animation-name: wipe-enter;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes wipe-enter {
+  0% {
+    width: 0;
+    -webkit-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+  }
+  50% {
+    width: 50%;
+  }
+}
+
+@keyframes wipe-enter {
+  0% {
+    width: 0;
+    -webkit-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+  }
+  50% {
+    width: 50%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

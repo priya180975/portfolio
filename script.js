@@ -40,6 +40,32 @@ function deleting()
 
 type();
 
+
+//skills fill effect 
+console.log(document.querySelectorAll(".skill-line div"))
+
+const square = document.querySelectorAll('.skill-line div');
+// square.forEach(a=>a.classList.remove('animaaation'));
+
+// Create the observer, same as before:
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+        console.log(entry.target)
+      entry.target.classList.add('animaaation');
+      return;
+    }
+
+    entry.target.classList.remove('animaaation');
+  });
+});
+
+square.forEach(a=>observer.observe(a))
+
+
+
+
+//light dark theme 
 let dayN=document.querySelector("#day-night")
 dayN.addEventListener("click",alter)
 console.log(document.querySelector("#day-night"))
@@ -56,7 +82,5 @@ function alter()
 }
 
 
-//console.log(document.documentElement.style.setProperty("--color-black-font","red"));
-// root.style.setProperty('--font-size', '14px');
 
 

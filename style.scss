@@ -316,3 +316,20 @@ main{
         }
     }
 }
+
+.animaaation{
+    animation-name: wipe-enter;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes wipe-enter {
+	0% {
+        width: 0;
+        transition: all ease 0.8s;
+	}
+	50% {
+		width: 50%;
+	}
+}
+
