@@ -308,11 +308,11 @@ main #skills .skill-block .skill-line #skill-line-css3 {
 }
 
 main #skills .skill-block .skill-line #skill-line-saas {
-  width: 70%;
+  width: 80%;
 }
 
 main #skills .skill-block .skill-line #skill-line-bootstrap {
-  width: 60%;
+  width: 50%;
 }
 
 main #skills .skill-block .skill-line #skill-line-javascript {
@@ -337,6 +337,14 @@ main #skills .skill-block .skill-line #skill-line-php {
 
 main #skills .skill-block .skill-line #skill-line-mysql {
   width: 70%;
+}
+
+main #skills .skill-block .skill-line #skill-line-mongo {
+  width: 50%;
+}
+
+main #skills .skill-block .skill-line #skill-line-java {
+  width: 60%;
 }
 
 main #skills .skill-block .skill-line #skill-line-git {
@@ -627,6 +635,10 @@ footer {
   }
 }
 
+#contact-links {
+  display: none;
+}
+
 @media (max-width: 700px) {
   main {
     width: 100%;
@@ -635,7 +647,7 @@ footer {
     font-size: 4rem;
   }
   main .block .heading {
-    width: 100%;
+    width: 100%  !important;
     font-size: 2.2rem;
   }
   main .block {
@@ -719,6 +731,18 @@ footer {
   }
   main #contact #contact-block button {
     padding: 0.4rem 1rem;
+  }
+  #contact-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 1rem;
+    padding-bottom: none;
+  }
+  #contact-left {
+    display: none;
   }
 }
 

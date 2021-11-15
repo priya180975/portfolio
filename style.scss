@@ -3,11 +3,10 @@
 
 
 $color-black-font: #000;
-$color-white-font:#fff;//change
+$color-white-font:#fff;
 
 
 *{
-    //font-family: 'Share Tech Mono', monospace;
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
@@ -144,7 +143,6 @@ body{
     }
 
     footer{
-        //background: rgb(255, 255, 255);
         color: $color-white-font;
     }
 }
@@ -171,7 +169,6 @@ body{
 .cursor::after{
     content: "";
     padding: 2rem;
-    //background: rgba(248, 242, 188, 0.918);
     border:2px solid #ffd271;
     position: absolute;
     border-radius: 50%;
@@ -194,16 +191,13 @@ nav{
 
     a{
         text-decoration: none;
-        //color: $color-black-font;
         margin-right: 1.5rem;
     }
 
     #day-night{
-        // display: none
         background:none;
         border:none;
         color: #ff5e00;
-       // cursor: pointer;
     }
 }
 
@@ -224,12 +218,10 @@ nav{
         height: 30vh;
         padding: 1px;
         display: inline-block;
-        //background: $color-black-font;
     }
 
     a{
         margin-bottom: 2rem;
-       //color: $color-black-font;
         font-size: 1.1rem;
     }
 }
@@ -239,7 +231,6 @@ main{
     padding: 1rem;
     width: 85%;
     margin: 0 auto;
-    // color: $color-black-font;
 
     .block{
         padding: 2rem;
@@ -248,7 +239,6 @@ main{
         .heading{
             font-family: 'Major Mono Display', monospace;
             font-size: 3rem;
-            //background: red;
             width: 35%;
         }
 
@@ -291,12 +281,10 @@ main{
                 align-items: center;
                 justify-content: space-between;
                 padding:1rem;
-                // border:1px solid $color-black-font;
 
 
                 div{
                     padding: 0.2rem;
-                    // background: $color-black-font;
                 }
 
                 #skill-line-html5{
@@ -308,11 +296,11 @@ main{
                 }
 
                 #skill-line-saas{
-                    width: 70%;
+                    width: 80%;
                 }
 
                 #skill-line-bootstrap{
-                    width: 60%;
+                    width: 50%;
                 }
 
                 #skill-line-javascript{
@@ -339,6 +327,14 @@ main{
                     width: 70%;
                 }
 
+                #skill-line-mongo{
+                    width: 50%;
+                }
+
+                #skill-line-java{
+                    width: 60%;
+                }
+
                 #skill-line-git{
                     width: 80%;
                 }
@@ -363,7 +359,6 @@ main{
 
                 .edu-block{
                     margin-bottom: 2rem;
-                    // border-left: 0.3rem solid $color-black-font;
                     padding: 1rem;
 
                     .edu-block-heading{
@@ -391,11 +386,9 @@ main{
              
             .project-block{
                 border-radius: 1rem;
-                //border: 2px solid $color-black-font;
                 display: flex;
                 flex-direction: column;
                 margin: 1rem;
-                //height: max-content;
 
                 img{
                     width: 100%;
@@ -405,7 +398,6 @@ main{
                 .project-block-cont
                 {
                     padding:1rem;
-                    //color: $color-black-font;
                     display: flex;
                     flex-direction: column;
 
@@ -424,7 +416,6 @@ main{
                         a{
                             display: block;
                             text-decoration: none;     
-                            //color: $color-black-font;
                         }
                     }
 
@@ -432,25 +423,12 @@ main{
                         height: max-content;
                         overflow:visible;
                         .label{
-                            //border:1px solid $color-black-font;
                             padding: 0 0.3rem;
                             border-radius: 1rem;
                             background: rgba(166, 250, 243, 0.623);
                         }
                     }
                 }
-
-                // .project-block-cont:hover{
-                //     background: $color-black-font;
-                //     color: $color-white-font;
-                //     a{
-                //         color: $color-white-font;
-                //     }
-                //     .label{
-                //         border-color: $color-white-font;
-                //     }
-                // }
-            
             }
 
             .project-block1{
@@ -516,12 +494,10 @@ main{
                 width: 90%;
                 outline: none;
                 padding: 0.8rem;  
-                //border: 1px solid $color-black-font;
                 background: none;
             }
 
             button{
-                // color: $color-black-font;
                 padding: 0.6rem 2rem;
             }
            
@@ -531,9 +507,7 @@ main{
 }
 
 footer{
-    //background:  $color-black-font;
     padding: 0.8rem;
-    //color: $color-white-font;
     text-align: center;
     font-size: 0.8rem;
 }
@@ -572,6 +546,10 @@ footer{
     }
 }
 
+#contact-links{
+    display: none;
+}
+
 @media(max-width:700px)
 {
     main{
@@ -582,7 +560,7 @@ footer{
         }
 
         .block .heading {
-            width: 100%;
+            width: 100%  !important;
             font-size: 2.2rem;
         }
 
@@ -632,13 +610,11 @@ footer{
                 .project-block3{
                     grid-column: 1;
                     grid-row: 3;
-                    // height: max-content;
                 }
     
                 .project-block4{
                     grid-row: 4;
                     grid-column: 1;
-                    //height: max-content;
                 }
     
                 .project-block5{
@@ -649,7 +625,6 @@ footer{
                 .project-block6{
                     grid-column: 1;
                     grid-row: 6;
-                    //height:max-content;
                 }
     
                 .project-block7{
@@ -673,6 +648,15 @@ footer{
                 padding: 0.4rem 1rem;
             }
         }
+    }
+    #contact-links{
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+        padding-bottom:  none;
+    }
+    #contact-left{
+        display: none;
     }
 }
 

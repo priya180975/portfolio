@@ -12,7 +12,7 @@ function type()
         }   
         else
         {
-            deleting();
+            //deleting();
             return false;
         }
         setTimeout(looping,500);
@@ -47,7 +47,7 @@ type();
 const square = document.querySelectorAll('.skill-line div');
 // square.forEach(a=>a.classList.remove('animaaation'));
 
-// Create the observer, same as before:
+
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
